@@ -1,0 +1,68 @@
+$dkViolet: hsl(256, 26%, 20%);
+
+.hero-img{
+    width: 100%;
+}
+
+.hero-text{
+    border: 1px solid magenta;
+    background-color: $dkViolet; 
+    color: white;
+    padding: 5rem 1.75rem;
+    position: relative;
+    text-align: center;
+
+    & .bg-left{
+        position: absolute;
+        top:0;
+        left:0;
+    }
+
+    & .bg-right{
+        position: absolute;
+        right:0;
+        bottom: -10rem;
+    }
+
+    & .cta{
+        border: 1px solid white;
+        color: white;
+        display: inline-block;
+        font-family: "Karla", sans-serif;
+        letter-spacing: 1px;
+        margin: 2rem auto;
+        padding: 0.5em;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+}
+
+//DESKTOP VIEW
+@media screen and (min-width: 62.5rem) {
+    .hero-text{
+        text-align: left;
+
+        article{
+            width: 50%;
+        }
+
+        &::before{
+            content: "";
+            display: block;
+            background-color: white;
+            height: 2px;
+            width: 100px;
+            z-index: 2;
+        }
+    }
+
+
+    .hero-img{
+        position: absolute;
+        top: 10rem;
+        right: 4rem;
+        width: 40%;
+        z-index: 1;
+    }
+}

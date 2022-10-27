@@ -1,0 +1,66 @@
+//VARIABLES
+$dkViolet: hsl(256, 26%, 20%);
+$gray: hsl(216, 30%, 68%);
+$altBlack: hsl(270, 9%, 17%);
+$grayViolet: hsl(273, 4%, 51%);
+$ltGray: hsl(0, 0%, 98%);
+
+
+//SETUP
+*, *::after, *::before{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+//FONTS
+h1{
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+}
+
+p{
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+}
+
+
+h1{
+  font-size: 2.75rem;
+  margin-block: 0.25em;
+}
+
+p{
+  line-height: 1.5;
+}
+
+//GLOBALS
+.flex-space{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile{
+  display: block;
+}
+
+.desktop{
+  display: none;
+}
+
+
+//DESKTOP VIEWS
+@media screen and (min-width: 62.5rem) {
+  .desktop{
+    display: block;
+  }
+
+  .mobile{
+    display: none;
+  }
+}
